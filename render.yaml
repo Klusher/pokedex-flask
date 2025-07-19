@@ -3,7 +3,7 @@ services:
     name: pokedex-flask
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn pokedex.app:app"
+    startCommand: "cd pokedex && gunicorn app:app"
     envVars:
       - key: PORT
         value: 10000
