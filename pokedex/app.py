@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, url_for, request, g
 from pokedex import helper
 
 app = Flask(__name__)
-app.config["DATABASE"] = os.path.join(os.path.dirname(__file__), "database.db")
+app.config["DATABASE"] = "database.db"
 
 
 @app.route("/")
